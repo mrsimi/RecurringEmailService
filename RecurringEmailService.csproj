@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e36580d4-6af6-41d4-9933-ced3cc86d178</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.30" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.30" />
+    <PackageReference Include="Hangfire.InMemory" Version="0.3.4" />
+    <PackageReference Include="SendGrid" Version="9.28.0" />
+    <PackageReference Include="SendGrid.Extensions.DependencyInjection" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>
