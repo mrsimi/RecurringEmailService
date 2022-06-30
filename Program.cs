@@ -37,11 +37,11 @@ public class EmailJob
     {
         var msg = new SendGridMessage()
         {
-            From = new EmailAddress("home@turntablecharts.com", "Simi"),
+            From = new EmailAddress("[SENDER_EMAIL]", "[SENDER_NAME]"),
             Subject = "A Recurring Email using Twilio SendGrid",
             PlainTextContent = "Hello and welcome to the world of periodic emails with Hangfire and SendGrid. "
         };
-        msg.AddTo(new EmailAddress("saulsimi9@gmail.com", "Saul Simi"));
+        msg.AddTo(new EmailAddress("[RECIPIENT_EMAIL]", "[RECIPIENT_NAME]"));
         
         var response = await sendGridClient.SendEmailAsync(msg);
 
